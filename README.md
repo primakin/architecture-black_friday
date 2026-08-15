@@ -1,35 +1,16 @@
 # pymongo-api
 
-## Как запустить
-
-Запускаем mongodb и приложение
-
+## Как запустить итоговый проект
 ```shell
+cd sharding-repl-cache
 docker compose up -d
-```
-
-Заполняем mongodb данными
-
-```shell
 ./scripts/mongo-init.sh
 ```
-
 ## Как проверить
-
-### Если вы запускаете проект на локальной машине
-
 Откройте в браузере http://localhost:8080
+Список доступных эндпоинтов, swagger http://localhost:8080/docs
 
-### Если вы запускаете проект на предоставленной виртуальной машине
+## Итоговая схема
+Исходник в schemes/final.drawio
+![final](https://github.com/primakin/architecture-black_friday/blob/black_friday/schemes/final.png?raw=true)
 
-Узнать белый ip виртуальной машины
-
-```shell
-curl --silent http://ifconfig.me
-```
-
-Откройте в браузере http://<ip виртуальной машины>:8080
-
-## Доступные эндпоинты
-
-Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
